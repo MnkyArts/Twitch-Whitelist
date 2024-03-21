@@ -1,75 +1,24 @@
-# Nuxt 3 Minimal Starter
+# Twitch Follower Whitelist
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Twitch Follower Whitelist is a handy tool designed for broadcasters or groups of broadcasters to streamline the process of managing viewer access to their Minecraft servers. By linking their Twitch accounts, broadcasters can authenticate viewers and grant whitelist access based on their Twitch follow status. 🎮🔒
 
-## Setup
+## Features
 
-Make sure to install the dependencies:
+- **Stream Follower Verification**: Easily check if a user follows your stream or any of your group of streamers. ✔️
+- **Effortless Whitelisting**: Viewers can seamlessly whitelist themselves by logging in through Twitch and entering their Minecraft username. 📝
+- **Database Integration**: Prevent viewers from whitelisting multiple Minecraft accounts with a single Twitch account by utilizing a robust database system. 🗃️
+- **Simple Setup**: Utilize the convenience of a .env file for easy configuration and setup. ⚙️
 
-```bash
-# npm
-npm install
+## How It Works
 
-# pnpm
-pnpm install
+1. **Twitch Authentication**: Viewers log in through Twitch to authenticate their identity.
+2. **Follow Status Check**: The tool verifies if the viewer follows the broadcaster's stream or any of the designated group of streamers.
+3. **Whitelisting**: Verified viewers can whitelist themselves by entering their Minecraft username.
+4. **Database Management**: The system ensures that each Twitch account can whitelist only one Minecraft username, maintaining fairness and integrity.
+5. **Access Granted**: Authenticated and whitelisted viewers gain access to the Minecraft server, fostering a community-driven gaming experience.
 
-# yarn
-yarn install
+## Get Started
 
-# bun
-bun install
-```
+Coming soon, still wip!
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Twitch Follower Whitelist simplifies the process of managing viewer access to your Minecraft server, fostering a strong and engaged community around your content. Start empowering your viewers today! 🚀
