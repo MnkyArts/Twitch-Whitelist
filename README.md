@@ -25,4 +25,4 @@ Minecraft: Twitch follower Whitelist is a handy tool designed for broadcasters o
 
 Coming soon, still wip!
 
-Twitch Follower Whitelist simplifies the process of managing viewer access to your Minecraft server, fostering a strong and engaged community around your content. Start empowering your viewers today! 🚀
+Minecraft: Twitch follower Whitelist simplifies the process of managing viewer access to your Minecraft server, fostering a strong and engaged community around your content. Start empowering your viewers today! 🚀

@@ -4,8 +4,13 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     APP_URL: process.env.APP_URL,
+    CHECK_FOLLOWED: process.env.CHECK_FOLLOWED,
+    CHECK_SUBSCRIBED: process.env.CHECK_SUBSCRIBED,
     TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID,
     TWITCH_CLIENT_SECRET: process.env.TWITCH_CLIENT_SECRET,
-    CHANNELS_TO_FOLLOW: process.env.CHANNELS_TO_FOLLOW,
+    CHANNEL_LIST: process.env.CHANNELS_TO_FOLLOW,
+    RCON_HOST: process.env.RCON_HOST,
+    RCON_PORT: process.env.RCON_PORT,
+    RCON_PASSWORD: process.env.RCON_PASSWORD,
   },
 });

@@ -4,13 +4,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  methods: {
-    async loginWithTwitch() {
-      // Redirect user to Twitch authentication page
-      window.location.href = `https://id.twitch.tv/oauth2/authorize?client_id=zveul1fehyvyh4tml0w9zz14k83elz&redirect_uri=${window.location.origin}/auth/callback&response_type=code&scope=user:read:follows`;
-    },
-  },
+<script setup>
+const loginWithTwitch = async () => {
+  window.location.href = `https://id.twitch.tv/oauth2/authorize?client_id=zveul1fehyvyh4tml0w9zz14k83elz&redirect_uri=${window.location.origin}/auth/callback&response_type=code&scope=user:read:follows+user:read:subscriptions`;
 };
 </script>
