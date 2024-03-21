@@ -8,6 +8,7 @@ Minecraft: Twitch Whitelister is a handy tool designed for streamer or groups of
 
 ## Features
 
+- **Sleek Design**: Simple but sleek design using tailwindcss. 😎
 - **Stream Follower Verification**: Easily check if a user follows your stream or any of your group of streamers. ✔️
 - **Stream Subscription Verification**: Easily check if a user is subscribed to your stream or any of your group of streamers. ✔️
 - **Effortless Whitelisting**: Viewers can seamlessly whitelist themselves by logging in through Twitch and entering their Minecraft username. 📝
