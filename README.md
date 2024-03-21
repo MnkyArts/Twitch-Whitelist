@@ -1,14 +1,15 @@
 <p align="center">
-    <img src="https://i.imgur.com/yyUkiWB.png" width="500">
+    <img src="https://i.imgur.com/yFu8WBx.png" width="500">
 </p>
 <h1 align="center">
-	Minecraft: Twitch follower Whitelist
+	Minecraft: Twitch Whitelister
 </h1>
-Minecraft: Twitch follower Whitelist is a handy tool designed for broadcasters or groups of broadcasters to streamline the process of managing viewer access to their Minecraft servers. By linking their Twitch accounts, the tool can authenticate viewers and grant whitelist access based on their Twitch follow status. 🎮🔒
+Minecraft: Twitch Whitelister is a handy tool designed for broadcasters or groups of broadcasters to streamline the process of managing viewer access to their Minecraft servers. By linking their Twitch accounts, the tool can authenticate viewers and grant whitelist access based on their Twitch follow or subscription status. 🎮🔒
 
 ## Features
 
 - **Stream Follower Verification**: Easily check if a user follows your stream or any of your group of streamers. ✔️
+- **Stream Subscription Verification**: Easily check if a user is subscribed to your stream or any of your group of streamers. ✔️
 - **Effortless Whitelisting**: Viewers can seamlessly whitelist themselves by logging in through Twitch and entering their Minecraft username. 📝
 - **Database Integration**: Prevent viewers from whitelisting multiple Minecraft accounts with a single Twitch account by utilizing a robust database system. 🗃️
 - **Simple Setup**: Utilize the convenience of a .env file for easy configuration and setup. ⚙️
@@ -25,4 +26,4 @@ Minecraft: Twitch follower Whitelist is a handy tool designed for broadcasters o
 
 Coming soon, still wip!
 
-Minecraft: Twitch follower Whitelist simplifies the process of managing viewer access to your Minecraft server, fostering a strong and engaged community around your content. Start empowering your viewers today! 🚀
+Minecraft: Twitch Whitelister simplifies the process of managing viewer access to your Minecraft server, fostering a strong and engaged community around your content. Start empowering your viewers today! 🚀
