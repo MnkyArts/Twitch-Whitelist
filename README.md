@@ -4,7 +4,7 @@
 <h1 align="center">
 	Minecraft: Twitch Whitelister
 </h1>
-Minecraft: Twitch Whitelister is a handy tool designed for broadcasters or groups of broadcasters to streamline the process of managing viewer access to their Minecraft servers. By linking their Twitch accounts, the tool can authenticate viewers and grant whitelist access based on their Twitch follow or subscription status. 🎮🔒
+Minecraft: Twitch Whitelister is a handy tool designed for streamer or groups of streamers to streamline the process of managing viewer access to their Minecraft servers. By linking their Twitch accounts, the tool can authenticate viewers and grant whitelist access based on their Twitch follow or subscription status. 🎮🔒
 
 ## Features
 

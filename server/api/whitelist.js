@@ -40,10 +40,12 @@ export default defineEventHandler(async (event) => {
 
       if (CHECK_SUBSCRIBED === "true") {
         const subscribeResponse = await fetchTwitchAPI(
-          `/subscriptions/user?user_id=${twitchId}&broadcaster_id=${channel}`,
+          `/subscriptions/user?broadcaster_id=${channel}&user_id=${twitchId}`,
           accessToken
         );
         const subscribeData = await subscribeResponse.json();
+        if (subscribeData.status === 404)
+          return (isSubscribedToAnyChannel = false);
         isSubscribedToAnyChannel = subscribeData.data.length > 0;
       }
 
@@ -60,11 +62,15 @@ export default defineEventHandler(async (event) => {
     );
 
     if (CHECK_FOLLOWED === "true" && !isFollowingAnyChannel) {
-      return new Response("Not following any channel", { status: 403 });
+      return new Response("You are not a follower of the Channel!", {
+        status: 403,
+      });
     }
 
     if (CHECK_SUBSCRIBED === "true" && !isSubscribedToAnyChannel) {
-      return new Response("Not subscribed to any channel", { status: 403 });
+      return new Response("You are not a subscriber of the Channel!", {
+        status: 403,
+      });
     }
 
     const RCONClient = new Rcon({
@@ -73,30 +79,30 @@ export default defineEventHandler(async (event) => {
       password: RCON_PASSWORD,
     });
 
-    await RCONClient.connect()
-      .then(() => {
-        console.log("Connected to RCON server");
+    try {
+      await RCONClient.connect();
+      console.log("Connected to RCON server");
 
-        RCONClient.send(`whitelist add ${minecraftUsername}`).then(
-          (response) => {
-            console.log(`${response}`);
-          }
-        );
+      const whitelistResponse = await RCONClient.send(
+        `whitelist add ${minecraftUsername}`
+      );
+      console.log(`${whitelistResponse}`);
 
-        RCONClient.send(
-          `say ${minecraftUsername} has been added to the whitelist.`
-        );
+      await RCONClient.send(
+        `say ${minecraftUsername} has been added to the whitelist.`
+      );
 
-        RCONClient.end();
-        return new Response("Added to whitelist", { status: 200 });
-      })
-      .catch((error) => {
-        console.error("Error connecting to RCON server:", error);
-        return new Response("Error connecting to RCON server", { status: 500 });
-      });
+      RCONClient.end();
+      return new Response("You have been whitelisted!", { status: 200 });
+    } catch (error) {
+      console.error("Error sending commands via RCON:", error);
+      return new Response("Error sending commands via RCON", { status: 500 });
+    }
   } catch (error) {
-    console.error("Error checking follower status:", error);
-    return new Response("Error checking follower status", { status: 500 });
+    console.error("Error checking follower or subscription status:", error);
+    return new Response("Error checking follower or subscription status", {
+      status: 500,
+    });
   }
 });
 
