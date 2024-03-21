@@ -1,5 +1,9 @@
-# Minecraft: Twitch follower Whitelist
-
+<p align="center">
+    <img src="https://i.imgur.com/yyUkiWB.png" width="500">
+</p>
+<h1 align="center">
+	Minecraft: Twitch follower Whitelist
+</h1>
 Minecraft: Twitch follower Whitelist is a handy tool designed for broadcasters or groups of broadcasters to streamline the process of managing viewer access to their Minecraft servers. By linking their Twitch accounts, the tool can authenticate viewers and grant whitelist access based on their Twitch follow status. 🎮🔒
 
 ## Features
