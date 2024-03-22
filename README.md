@@ -12,7 +12,7 @@ Minecraft: Twitch Whitelister is a handy tool designed for streamer or groups of
 - **Stream Follower Verification**: Easily check if a user follows your stream or any of your group of streamers. ✔️
 - **Stream Subscription Verification**: Easily check if a user is subscribed to your stream or any of your group of streamers. ✔️
 - **Effortless Whitelisting**: Viewers can seamlessly whitelist themselves by logging in through Twitch and entering their Minecraft username. 📝
-- **Database Integration**: Prevent viewers from whitelisting multiple Minecraft accounts with a single Twitch account by utilizing a robust database system. 🗃️
+- ~**Database Integration**: Prevent viewers from whitelisting multiple Minecraft accounts with a single Twitch account by utilizing a robust database system. 🗃️~ Added Soon
 - **Simple Setup**: Utilize the convenience of a .env file for easy configuration and setup. ⚙️
 
 ## How It Works
@@ -20,7 +20,7 @@ Minecraft: Twitch Whitelister is a handy tool designed for streamer or groups of
 1. **Twitch Authentication**: Viewers log in through Twitch to authenticate their identity.
 2. **Follow Status Check**: The tool verifies if the viewer follows the broadcaster's stream or any of the designated group of streamers.
 3. **Whitelisting**: Verified viewers can whitelist themselves by entering their Minecraft username.
-4. **Database Management**: The system ensures that each Twitch account can whitelist only one Minecraft username, maintaining fairness and integrity.
+4. ~**Database Management**: The system ensures that each Twitch account can whitelist only one Minecraft username, maintaining fairness and integrity.~ Added Soon
 5. **Access Granted**: Authenticated and whitelisted viewers gain access to the Minecraft server, fostering a community-driven gaming experience.
 
 ## Get Started
